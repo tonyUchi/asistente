@@ -6,7 +6,6 @@ import uuid
 ARCHIVO_JSON = "log_sesiones.json"
 
 def guardar_log_json(session_id, usuario_msg, respuesta_asistente):
-    """Guarda la conversación en un archivo JSON con marca de tiempo y sesión."""
     fecha_hora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     entrada = {
         "timestamp": fecha_hora,
